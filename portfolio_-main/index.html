@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naylis Lattar | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <canvas id="particles" class="particles"></canvas>
+
+    <nav class="navbar">
+        <div class="brand">.NZL.</div>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#veille">Veille</a></li>
+            <li><a href="#documents">Documents</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggle" aria-label="Basculer le thème">🌙</button>
+    </nav>
+
+    <button id="backToTop" aria-label="Retour en haut">↑</button>
+
+    <header id="accueil" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-copy reveal">
+            <span class="eyebrow">BTS SIO 2 SLAM - Développeur Fullstack</span>
+            <h1>Naylis Zohra <span>Lattar</span></h1>
+            <p>Étudiante passionnée par le développement web et fullstack, je maîtrise HTML, CSS, JavaScript, PHP et Python. À la recherche d'une opportunité pour mettre mes compétences en pratique et créer des solutions impactantes.</p>
+            <div class="hero-actions">
+                <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                <a href="https://github.com/nayl11" target="_blank" class="btn btn-secondary">GitHub</a>
+                <a href="#contact" class="btn btn-outline">Me contacter</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="apropos" class="section about-section">
+            <div class="section-head">
+                <span>À PROPOS</span>
+                <h2>Qui suis-je ?</h2>
+            </div>
+            <div class="about-grid container">
+                <div class="about-text reveal">
+                    <p>Actuellement en <strong>BTS SIO spécialité SLAM</strong>, je me spécialise dans le développement fullstack avec une vraie passion pour créer des expériences digitales élégantes et performantes.</p>
+                    <p>Au fil de ma formation, j'ai acquis des bases solides en plusieurs langages et technologies web, et je continue à apprendre et explorer chaque jour.</p>
+                </div>
+                <div class="about-cards">
+                    <article class="feature-card reveal">
+                        <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3>Créative</h3>
+                        <p>Solutions innovantes face aux défis techniques.</p>
+                    </article>
+                    <article class="feature-card reveal">
+                        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                        <h3>Adaptable</h3>
+                        <p>Capacité à m'intégrer dans tout environnement.</p>
+                    </article>
+                    <article class="feature-card reveal">
+                        <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
+                        <h3>Polyvalente / Autonome</h3>
+                        <p>Proactive et orientée résultats.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="section skills-section">
+            <div class="section-head">
+                <span>Compétences</span>
+                <h2>Mon stack technique</h2>
+            </div>
+            <div class="skills-body container reveal">
+                <div class="skills-category">
+                    <h3>Langages</h3>
+                    <div class="skills-grid">
+                        <article class="skill-card">
+                            <h4>HTML</h4>
+                            <div class="progress-bar"><span class="progress-fill" style="width: 90%;"></span></div>
+                            <div class="progress-meta"><span>90%</span></div>
+                        </article>
+                        <article class="skill-card">
+                            <h4>CSS</h4>
+                            <div class="progress-bar"><span class="progress-fill" style="width: 88%;"></span></div>
+                            <div class="progress-meta"><span>88%</span></div>
+                        </article>
+                        <article class="skill-card">
+                            <h4>JavaScript</h4>
+                            <div class="progress-bar"><span class="progress-fill" style="width: 85%;"></span></div>
+                            <div class="progress-meta"><span>85%</span></div>
+                        </article>
+                        <article class="skill-card">
+                            <h4>PHP</h4>
+                            <div class="progress-bar"><span class="progress-fill" style="width: 87%;"></span></div>
+                            <div class="progress-meta"><span>87%</span></div>
+                        </article>
+                        <article class="skill-card">
+                            <h4>TypeScript (React, Adonis)</h4>
+                            <div class="progress-bar"><span class="progress-fill" style="width: 75%;"></span></div>
+                            <div class="progress-meta"><span>75%</span></div>
+                        </article>
+                        <article class="skill-card">
+                            <h4>Python</h4>
+                            <div class="progress-bar"><span class="progress-fill" style="width: 80%;"></span></div>
+                            <div class="progress-meta"><span>80%</span></div>
+                        </article>
+                        <article class="skill-card">
+                            <h4>SQL</h4>
+                            <div class="progress-bar"><span class="progress-fill" style="width: 82%;"></span></div>
+                            <div class="progress-meta"><span>82%</span></div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Frameworks & Outils</h3>
+                    <div class="skills-grid">
+                        <article class="skill-card">
+                            <h4>Laravel</h4>
+                            <div class="progress-bar"><span class="progress-fill" style="width: 86%;"></span></div>
+                            <div class="progress-meta"><span>86%</span></div>
+                        </article>
+                        <article class="skill-card">
+                            <h4>Back-end : PHP / Java / Node.js</h4>
+                            <div class="progress-bar"><span class="progress-fill" style="width: 80%;"></span></div>
+                            <div class="progress-meta"><span>80%</span></div>
+                        </article>
+                        <article class="skill-card">
+                            <h4>React</h4>
+                            <div class="progress-bar"><span class="progress-fill" style="width: 75%;"></span></div>
+                            <div class="progress-meta"><span>75%</span></div>
+                        </article>
+                        <article class="skill-card">
+                            <h4>Git / GitHub</h4>
+                            <div class="progress-bar"><span class="progress-fill" style="width: 89%;"></span></div>
+                            <div class="progress-meta"><span>89%</span></div>
+                        </article>
+                        <article class="skill-card">
+                            <h4>Docker</h4>
+                            <div class="progress-bar"><span class="progress-fill" style="width: 78%;"></span></div>
+                            <div class="progress-meta"><span>78%</span></div>
+                        </article>
+                        <article class="skill-card">
+                            <h4>Linux</h4>
+                            <div class="progress-bar"><span class="progress-fill" style="width: 45%;"></span></div>
+                            <div class="progress-meta"><span>45%</span></div>
+                        </article>
+                        <article class="skill-card">
+                            <h4>VSCode</h4>
+                            <div class="progress-bar"><span class="progress-fill" style="width: 92%;"></span></div>
+                            <div class="progress-meta"><span>92%</span></div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="certifications">
+                    <h3>Certifications</h3>
+                    <div class="cert-grid">
+                        <article class="cert-card"><strong>PIX</strong><p>Certification numérique.</p></article>
+                        <article class="cert-card"><strong>RGPD</strong><p>Certification en développement.</p></article>
+                        <article class="cert-card"><strong>CNIL</strong><p>Protection des données personnelles.</p></article>
+                        <article class="cert-card"><strong>FREECODECAMP</strong><p>Plateforme d'apprentissage en programmation.</p></article>
+                        <article class="cert-card"><strong>OpenClassroom</strong><p>Base de données relationnelles avec SQL.</p></article>
+                        <article class="cert-card"><strong>OpenClassroom</strong><p>Expert de Git et GitHub.</p></article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="section projects-section">
+            <div class="section-head">
+                <span>Projets</span>
+                <h2>Mes réalisations</h2>
+            </div>
+            <div class="projects-grid container reveal">
+                <article class="project-card">
+                    <img src="humeur.png" alt="Barometre de l'Humeur des employées Projet" loading="lazy">
+                    <div class="project-content">
+                        <span>JavaScript - React</span>
+                        <h3>Barometre de l'Humeur des employées</h3>
+                        <p>Application web Humeur accessible en ligne, disponible via le lien ci-dessous.</p>
+                        <a href="https://nayl11.github.io/Humeur/" target="_blank" class="doc-btn">Voir le projet</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="FLEUR.png" alt="Guide spirituel du bien-être" loading="lazy">
+                    <div class="project-content">
+                        <span>Guide spirituel</span>
+                        <h3>Guide spirituel du bien-être grace aux fleurs</h3>
+                        <p>Guide spirituel du bien-être disponible en ligne, accessible via le lien ci-dessous.</p>
+                        <a href="https://nayl11.github.io/site_fleur/" target="_blank" class="doc-btn">Voir le projet</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="huiles.png" alt="Projet Huile essentielle" loading="lazy">
+                    <div class="project-content">
+                        <span>Huile essentielle</span>
+                        <h3>Huile</h3>
+                        <p>Site consacré aux huiles essentielles, disponible en ligne via le lien ci-dessous.</p>
+                        <a href="https://nayl11.github.io/site_web/" target="_blank" class="doc-btn">Voir le projet</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="section experience-section">
+            <div class="section-head">
+                <span>Expérience</span>
+                <h2>Mes expériences professionnelles</h2>
+            </div>
+            <div class="experience-grid container reveal">
+                <article class="experience-card">
+                    <h3>Stage Développeur Fullstack</h3>
+                    <p class="company">YTTY Entreprise</p>
+                    <p class="meta">11 rue Jean Moulin, 42150 La Ricamarie — 2025</p>
+                    <div class="experience-body">
+                        <strong>Missions réalisées :</strong>
+                        <ul>
+                            <li>Développement de sites et interfaces web</li>
+                            <li>Assistance technique et maintenance matériel</li>
+                            <li>Gestion et suivi des ventes et des stocks</li>
+                            <li>Mise en place de mesures de sécurité des données</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="experience-card">
+                    <h3>Développeur Fullstack</h3>
+                    <p class="company">Heracles Consulting (télétravail)</p>
+                    <p class="meta">66 Avenue des Champs Élysées 75008 Paris — 2026</p>
+                    <div class="experience-body">
+                        <strong>Missions réalisées :</strong>
+                        <ul>
+                            <li>Animation et gestion d'une communauté sur Discord</li>
+                            <li>Participation à des sessions de formation en trading</li>
+                            <li>Création et amélioration de contenus pédagogiques</li>
+                            <li>Contribution au développement et à l'évolution d'un site web</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="parcours" class="section parcours-section">
+            <div class="section-head">
+                <span>Parcours</span>
+                <h2>Parcours académique</h2>
+            </div>
+            <div class="parcours-grid container reveal">
+                <span class="timeline-line"></span>
+                <article class="timeline-card">
+                    <span class="timeline-dot"></span>
+                    <h3>BTS Systèmes Informatiques aux Organisations</h3>
+                    <p class="timeline-date">2023 - 2025</p>
+                    <p class="timeline-subtitle"><em>Spécialité SLAM</em></p>
+                    <p>Formation complète en développement logiciel et architecture d'applications métiers.</p>
+                </article>
+                <article class="timeline-card">
+                    <span class="timeline-dot"></span>
+                    <h3>Baccalauréat Professionnel</h3>
+                    <p class="timeline-date">2023</p>
+                    <p class="timeline-subtitle"><em>Spécialités AGORA</em></p>
+                    <ul>
+                        <li>Gestion administrative des organisations</li>
+                        <li>Communication professionnelle</li>
+                        <li>Organisation et assistance aux tâches administratives</li>
+                        <li>Utilisation des outils bureautiques</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="veille" class="section veille-section">
+            <div class="section-head">
+                <span>Veille</span>
+                <h2>Veille technologique</h2>
+            </div>
+            <div class="projects-grid container reveal">
+                <article class="project-card">
+                    <img src="Affiche1.png" alt="IA Act & RIA" loading="lazy" class="lightbox-img">
+                    <div class="project-content">
+                        <span>Régulation</span>
+                        <h3>IA Act & RIA</h3>
+                        <p>Encadrement légal de l'IA en Europe.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="Affiche2.png" alt="Impact de l'IA" loading="lazy" class="lightbox-img">
+                    <div class="project-content">
+                        <span>Tendances</span>
+                        <h3>Impact de l'IA</h3>
+                        <p>Investissements et révolutions dans les industries.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="Affiche3.png" alt="Accessibilité numérique" loading="lazy" class="lightbox-img">
+                    <div class="project-content">
+                        <span>Accessibilité</span>
+                        <h3>Accessibilité numérique</h3>
+                        <p>Obligations légales 2025 pour un web accessible.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="documents" class="section documents-section">
+            <div class="section-head">
+                <span>Épreuve E5</span>
+                <h2>Documents officiels</h2>
+                <p class="section-description">Téléchargez les documents officiels relatifs à l'épreuve E5 du BTS SIO.</p>
+            </div>
+            <div class="docs-grid container reveal">
+                <article class="doc-card">
+                    <div class="doc-icon"><i class="far fa-file-pdf"></i></div>
+                    <h3>CV Complet</h3>
+                    <p>Mon curriculum vitae détaillé.</p>
+                    <a href="CV (1).pdf" target="_blank" class="doc-btn">PDF</a>
+                </article>
+                <article class="doc-card">
+                    <div class="doc-icon"><i class="far fa-file-excel"></i></div>
+                    <h3>Tableau de synthèse E5</h3>
+                    <p>Tableau de synthèse pour l'épreuve E5 du BTS SIO.</p>
+                    <a href="BTS_SIO_Annexe_VI.5_Epreuve E5 - Tableau de synthe.se_2026.xlsx" target="_blank" class="doc-btn">XLSX</a>
+                </article>
+                <article class="doc-card">
+                    <div class="doc-icon"><i class="far fa-file-pdf"></i></div>
+                    <h3>Attestation de stages 1 et 2</h3>
+                    <p>Attestations pour les stages effectués.</p>
+                    <a href="Attestaion_stages.pdf" target="_blank" class="doc-btn">PDF</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-head">
+                <span>Contact</span>
+                <h2>Me contacter</h2>
+            </div>
+            <div class="contact-grid container reveal">
+                <div class="contact-card">
+                    <h3>Mes Coordonnées</h3>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p>Email :</p>
+                            <strong>naylis.lattar11@gmail.com</strong>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p>Téléphone :</p>
+                            <strong>+33 6 19 18 22 55</strong>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Nom" required>
+                    <input type="email" placeholder="Votre Email" required>
+                    <textarea rows="6" placeholder="Votre message..." required></textarea>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="imageModal" class="image-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modalImage" alt="">
+            <div id="modalCaption"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Développé et codé par <span class="footer-name">Naylis Lattar</span></p>
+            <p class="footer-year">© 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
